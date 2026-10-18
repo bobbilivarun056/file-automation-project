@@ -1,0 +1,30 @@
+2026-10-18 17:08:53,555 - INFO - Moved .gitignore -> E:Others
+2026-10-18 17:08:53,623 - ERROR - Permission denied.
+Traceback (most recent call last):
+  File "C:\Users\Bobbili\AppData\Local\Python\pythoncore-3.14-64\Lib\shutil.py", line 922, in move
+    os.rename(src, real_dst)
+    ~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'E:file_organizer.log' -> 'E:Others\\file_organizer.log'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\intern task 3\file_organizer.py", line 72, in organize_files
+    shutil.move(
+    ~~~~~~~~~~~^
+        source_path,
+        ^^^^^^^^^^^^
+        destination_path
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Bobbili\AppData\Local\Python\pythoncore-3.14-64\Lib\shutil.py", line 943, in move
+    os.unlink(src)
+    ~~~~~~~~~^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'E:file_organizer.log'
+2026-10-18 17:12:19,754 - INFO - Moved 1 admin.html -> E:\correct codes\Others
+2026-10-18 17:12:19,758 - INFO - Moved 1 app.py -> E:\correct codes\Others
+2026-10-18 17:12:19,762 - INFO - Moved 1 basket.html -> E:\correct codes\Others
+2026-10-18 17:12:19,764 - INFO - Moved 1 storefront .html -> E:\correct codes\Others
+2026-10-18 17:12:19,767 - INFO - Moved 1 style.css -> E:\correct codes\Others
+2026-10-18 17:12:19,780 - INFO - File organization completed.
